@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+
+    background-image: linear-gradient(to right bottom, #467a72, #272632);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#486769), to(#272632));
+    min-height: 100vh;
+
+}
+ 
+header {
+    background: #eeeeee;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+header > h1 {
+    color: #474a69;
+    text-align: center;
+}
+
+header > h1 span {
+    color: #474a69;
+}
+
+.score-board {
+    margin: 20px auto;;
+    border: 3px solid white;
+    width: 220px;
+    font-size: 46px;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+
+#user-score {
+    padding: 4px;
+}
+
+#computer-score {
+    padding: 4px;
+}
+
+.badge {
+    background: #d87942;
+    font-size: 18px;
+    padding: 3px 10px;
+
+}
+
+#user-label {
+    position: absolute;
+    top: -3px;
+    left: -4px;
+}
+
+#computer-label {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.result {
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+.result > p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.choices {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.choice {
+    margin: 0 20px;
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 11px;
+    transition: all 0.3s ease;
+}
+
+#r:hover {
+    cursor: pointer;
+    background: #8d6e8b;
+}
+#p:hover {
+    cursor: pointer;
+    background: #9c7a31ee;
+}
+#s:hover {
+    cursor: pointer;
+    background: #77945d;
+}
+
+#action-message {
+    text-align: center;
+    font-size: 25px;
+    margin: 50px auto 0 auto;
+    border: 2px solid white;
+    width: 160px;
+    padding: 5px;
+}
+
+#action-message:hover {
+    cursor: pointer;
+    background: #4f4e5e;
+}
+
+.green-glow {
+    border: 4px solid rgb(72, 185, 72);
+    box-shadow: 0 0 10px rgb(46, 124, 46);
+}
+
+.red-glow {
+    border: 4px solid rgb(189, 62, 62);
+    box-shadow: 0 0 10px rgb(124, 40, 40);
+}
+
+.grey-glow {
+    border: 4px solid rgb(139, 138, 129);
+    box-shadow: 0 0 10px rgb(85, 84, 80);
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    header > h1, header > h1 span {
+        font-size: 1.8rem;
+    }
+
+    .choice {
+        margin: 0 2px;
+        padding: 3px;
+
+    }
+}
